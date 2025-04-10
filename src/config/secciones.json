@@ -1,0 +1,45 @@
+{
+    "secciones": [
+        {
+            "id": 1,
+            "title": "Quienes somos",
+            "image": "img/quienes.webp",
+            "imageA": "img/quienes.jpg",
+            "href": "/quienes/",
+            "clase": "relative h-72 w-[280px] border-marino-700 border-b-[48px] mx-12 mb-8 md:mb-10",
+            "clase2": "static h-60 w-[280px] border-[34px] border-indigo-50/0 border-b-marino-900 mb-8 md:mb-10",
+            "bgcolor": "bg-marino-700 text-xl font-bold text-ath-gray-50"
+        },
+        {
+            "id": 2,
+            "title": "Consejeros 2019-2021",
+            "image": "img/consejeros.webp",
+            "imageA": "img/consejeros.jpg",
+            "href": "/consejeros/",
+            "clase": "relative h-72 w-[280px] border-green-700 border-b-[48px] mx-12 mb-8 md:mb-10",
+            "clase2": "static h-60 w-[280px] border-[34px] border-indigo-50/0 border-b-green-900 mb-8 md:mb-10",
+            "bgcolor": "bg-green-700 text-xl font-bold text-ath-gray-50"
+        
+        },
+        {
+            "id": 3,
+            "title": "Acuerdo",
+            "image": "img/acuerdo2.webp",
+            "imageA": "img/acuerdo2.jpg",
+            "href": "https://www.red-tic.unam.mx/recursos/UNAM_AcuerdoCreacionCATIC2009.pdf",
+            "clase": "relative h-72 w-[280px] border-mint-600 border-b-[48px] mx-12 mb-8 md:mb-10",
+            "clase2": "static h-60 w-[280px] border-[34px] border-indigo-50/0 border-b-mint-800 mb-8 md:mb-10",
+            "bgcolor": "bg-mint-600 text-xl font-bold text-ath-gray-50"
+        },
+        {
+            "id": 4,
+            "title": "Convocatorias",
+            "image": "img/convocatorias.webp",
+            "imageA": "img/convocatorias.jpg",
+            "href": "/convocatorias/",
+            "clase": "relative h-72 w-[280px] border-roseal-600 border-b-[48px] mx-12 mb-8 md:mb-10",
+            "clase2": "static h-60 w-[280px] border-[34px] border-indigo-50/0 border-b-roseal-800 mb-8 md:mb-10",
+            "bgcolor": "bg-roseal-600 text-xl font-bold text-ath-gray-50"
+        }
+    ]
+}

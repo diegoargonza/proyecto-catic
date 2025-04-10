@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    table{   @apply border}
+    table thead th{  @apply border bg-gray-800 text-white p-2}
+    table tbody td{  @apply border-l border-b border-r  p-5  border-gray-950}
+    table tbody td:last-child{  @apply border-l-0 }
+
+}
