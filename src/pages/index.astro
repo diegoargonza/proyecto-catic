@@ -1,28 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
-import Nav from '../components/nav3.astro';
-import Footer from '../components/footer.astro';
 
-
-import {secciones} from '../config/secciones.json';
 
 //Imagenes para el carrusel
-import bgImageR24 from "../images/bnr_resultados24.webp";
-import bgImage0 from "../images/bannerPrincipios.webp";
-import bgImage1 from "../images/bnr_conv24.webp";
-import bgImage2 from "../images/bnr_catalogo24.webp";
-import bgImage3 from "../images/bnr_censoTIC_24.webp";
-import bgImage4 from "../images/bannerR24.webp";
+import bgImageR24 from "../../public/img/bnr_resultados24.webp";
+import bgImage0 from "../../public/img/bannerPrincipios.webp";
+import bgImage1 from "../../public/img/bnr_conv24.webp";
+import bgImage2 from "../../public/img/bnr_catalogo24.webp";
+import bgImage3 from "../../public/img/bnr_censoTIC_24.webp";
+import bgImage4 from "../../public/img/bannerR24.webp";
 
 
 ---
 
 <Layout title="CATIC">
-	<div>
-		<Header/>
-		<Nav/>
-	</div>
 	<main class="mb-14">
 
 		<!--Carrusel de imagenes -->
@@ -54,9 +45,6 @@ import bgImage4 from "../images/bannerR24.webp";
 						<a href="/docs/CatalogoBase-2024-110324.pdf" target="_blank"><img src={bgImage2} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Catalogo base 2023"></a>
 					</div>
 				
-					
-					
-					
 					
 
 					
@@ -91,39 +79,40 @@ import bgImage4 from "../images/bannerR24.webp";
 		</div>
 		
 
-		<!--Tarjetas
-		<img class="h-64 w-64 border-ath-gray-800 border-b-8 rounded-sm" src={seccion.image} alt={seccion.title}>
-		-->
-		<section>
-			<div class="flex flex-wrap justify-center items-center mt-8 md:mt-16">
-				{
-		
-					secciones.map(seccion =>(
-						<div class={seccion.clase}>
-							<div class={seccion.clase2}>
-								<div class="absolute -right-6 -top-5 mx-6">
-									<a href={seccion.href}>
-										<picture class=" border-ath-gray-800 border-b-8 rounded-sm">
-    										<source srcset={seccion.image} type="image/webp" width="356">
-    										<source srcset={seccion.imageA} type="image/jpeg" width="356">
-    										<img class="" src={seccion.image} width="356" alt="Alt Text!">
-										</picture>
-									</a>
-								</div>
-								<div class="absolute -bottom-11 flex justify-center items-center h-10">
-									<h2 class={seccion.bgcolor}> {seccion.title} </h2>
-								</div>
-
-							</div>
-						</div>
-					))
-				}
-			</div>
-			
+		<!--Tarjetas-->
+		<section class="flex justify-center">			
+			<div class="card">
+				<div class="card-img">
+				  <div class="triangle to-indigo-800 to-50%"></div>
+				  <img src="../images/quienes.webp" alt="" class="col-span-10 hover:cursor-pointer" />
+				</div>
+				<div class="title bg-indigo-500"> Quienes somos</div>
+			  </div>
+	  
+			  <div class="card">
+				<div class="card-img">
+				  <div class="triangle to-indigo-800 to-50%"></div>
+				  <img src="../images/quienes.webp" alt="" class="col-span-10 hover:cursor-pointer" />
+				</div>
+				<div class="title bg-indigo-500"> Consejeros</div>
+			  </div>
+	
+			  <div class="card">
+				<div class="card-img">
+				  <div class="triangle to-amber-800 to-50%"></div>
+				  <img src="../images/quienes.webp" alt="" class="col-span-10  hover:cursor-pointer" />
+				</div>
+				<div class="title bg-amber-500">Acuerdos</div>
+			  </div>
+	
+			  <div class="card">
+				<div class="card-img">
+				  <div class="triangle to-green-800 to-50%"></div>
+				  <img src="../images/acuerdo2.webp" alt="" class="col-span-10 hover:cursor-pointer" />
+				</div>
+				<div class="title bg-green-600">Convocatorias</div>
+			  </div>
 		</section>
 	</main>
-
-	<Footer/>
-
 
 </Layout>

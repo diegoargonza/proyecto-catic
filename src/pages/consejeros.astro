@@ -1,21 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
-import Nav from '../components/nav3.astro';
-import Footer from '../components/footer.astro';
 import CardQ from '../components/cardQ.astro';
 
 //importar imagenes
-import bgImage from '../images/quienes.jpg';
-import bgImage1 from '../images/unamCard2.webp';
+import bgImage from '../images/quienes.webp';
+import bgImage1 from '../../public/img/unamCard2.webp';
 ---
 
 <Layout title='Consejeros | CATIC'>
 
-    <div>
-        <Header/>
-        <Nav/>
-    </div>
+    
 
     <main class="mb-14">
         <h1 class="text-4xl font-normal text-center  mt-5 md:mt-10">Consejeros 2019-2021</h1>
@@ -23,11 +17,11 @@ import bgImage1 from '../images/unamCard2.webp';
             <CardQ image1={bgImage1} image2={bgImage}/>
 
             <div class="mt-10 mx-4 md:mx-0">
-                <h5 class="text-xl mb-2">Secretario Técnico del Consejo</h5>
+                <h5 class="text-xl mb-2 font-bold">Secretario Técnico del Consejo</h5>
 
                 <p class="mb-6">Dr. Héctor Benítez Pérez,<br>Director General de Cómputo y de Tecnologías de Información y Comunicación. </p>
 
-                <h5 class="text-xl mb-2">Consejeros</h5>
+                <h5 class="text-xl mb-2 font-bold">Consejeros</h5>
                 <h6 class="font-bold">Por el Sistema de Bachillerato:</h6>
                 <p class="mb-4">Ing. Armando Rodríguez Arguijo, Dirección General del CCH. </p>
 
@@ -52,7 +46,5 @@ import bgImage1 from '../images/unamCard2.webp';
             </div>
         </div>
     </main>
-
-    <Footer/>
 
 </Layout>
